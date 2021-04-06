@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Image Gallery with JS effect</title>   
+</head> 
+<body> 
+ 
+<div class="container">
+
+  
+<div class="title">
+  <h1>Image gallery</h1>
+</div>
+ 
+<div class="main"> 
+  <div class="row">
+    <div class="col">
+      <img onclick="myBtn();" src="img.png" id="gt">  
+    </div>
+    <div class="col right">  
+      <img onclick="myBtn4();" src="img5.png" id="gt4"> 
+    </div>
+    <div class="col right">
+      <img onclick="myBtn1();" src="img1.png" id="gt1">   
+    </div>
+  </div>
+  <div class="row second" id="sec"> 
+    <div class="col">
+      <img onclick="myBtn2();" src="img2.png" id="gt2">   
+    </div>
+    <div class="col right">
+      <img onclick="myBtn5();" src="img6.png" id="gt5"> 
+    </div>
+    <div class="col right">
+      <img onclick="myBtn3();" src="img3.png" id="gt3">  
+    </div>
+  </div>
+  <div class="button">  
+    <a href="index.html"><button id="btn2">Go back</button></a> 
+  </div>
+
+</div>
+
+
+
+</div>
+
+
+<script> 
+
+
+var gt = document.getElementById('gt');  
+var gt1 = document.getElementById('gt1'); 
+var gt2 = document.getElementById('gt2'); 
+var gt3 = document.getElementById('gt3'); 
+var gt4 = document.getElementById('gt4');  
+var gt5 = document.getElementById('gt5');  
+var btn2 = document.getElementById('btn2');    
+
+
+gt.style.cursor = 'pointer';   
+gt1.style.cursor = 'pointer';     
+gt2.style.cursor = 'pointer';   
+gt3.style.cursor = 'pointer';    
+gt4.style.cursor = 'pointer';   
+gt5.style.cursor = 'pointer';   
+btn2.style.display = 'none';   
+
+
+
+ 
+
+function myBtn()     
+{ 
+  gt.style.transform = 'scale(1.8)';         
+  gt.style.marginTop = '10vh';  
+  gt.style.marginBottom = '5vh';   
+  gt.style.display = 'block';   
+  gt.style.marginLeft = '37vh';     
+  gt.style.transition = '0.5s';    
+  // Others Picture  
+  gt1.style.display = 'none'; 
+  gt2.style.display = 'none'; 
+  gt3.style.display = 'none'; 
+  gt4.style.display = 'none'; 
+  gt5.style.display = 'none';  
+  //closing 
+  btn2.style.display = 'inline-block';   
+}
+
+function myBtn1()  
+{
+  gt1.style.transform = 'scale(1.8)';       
+  gt1.style.marginTop = '10vh';  
+  gt1.style.marginBottom = '5vh';    
+  gt1.style.display = 'block';   
+  gt1.style.marginLeft = '35vh';     
+  gt1.style.transition = '0.5s';  
+  // Others Picture  
+  gt.style.display = 'none'; 
+  gt2.style.display = 'none'; 
+  gt3.style.display = 'none'; 
+  gt4.style.display = 'none'; 
+  gt5.style.display = 'none'; 
+  //closing 
+  btn2.style.display = 'inline-block';  
+}
+
+function myBtn2()  
+{
+  gt2.style.transform = 'scale(1.8)';         
+  gt2.style.marginTop = '5vh';  
+  gt2.style.marginBottom = '10vh';   
+  gt2.style.display = 'block';   
+  gt2.style.marginLeft = '35vh';     
+  gt2.style.transition = '0.5s';    
+  // Others Picture  
+  gt.style.display = 'none'; 
+  gt1.style.display = 'none'; 
+  gt3.style.display = 'none'; 
+  gt4.style.display = 'none'; 
+  gt5.style.display = 'none'; 
+  //closing 
+  btn2.style.display = 'inline-block';  
+
+
+}
+
+function myBtn3()  
+{
+  gt3.style.transform = 'scale(1.8)';        
+  gt3.style.marginTop = '5vh';  
+  gt3.style.marginBottom = '10vh';  
+  gt3.style.display = 'block';   
+  gt3.style.marginLeft = '35vh';      
+  gt3.style.transition = '0.5s';    
+  // Others Picture  
+  gt.style.display = 'none'; 
+  gt1.style.display = 'none'; 
+  gt2.style.display = 'none';
+  gt4.style.display = 'none'; 
+  gt5.style.display = 'none'; 
+
+  //closing 
+  btn2.style.display = 'inline-block';  
+
+}
+ 
+
+function myBtn4()   
+{
+  gt4.style.transform = 'scale(1.8)';       
+  gt4.style.marginTop = '10vh';  
+  gt4.style.marginBottom = '5vh';   
+  gt4.style.display = 'block';   
+  gt4.style.marginLeft = '35vh';      
+  gt4.style.transition = '0.5s';    
+  // Others Picture  
+  gt.style.display = 'none'; 
+  gt1.style.display = 'none'; 
+  gt2.style.display = 'none'; 
+  gt3.style.display = 'none'; 
+  gt5.style.display = 'none'; 
+
+  //closing 
+  btn2.style.display = 'inline-block';  
+
+
+}
+
+
+
+function myBtn5()     
+{
+  gt5.style.transform = 'scale(1.8)';       
+  gt5.style.marginTop = '5vh';  
+  gt5.style.marginBottom = '10vh';   
+  gt5.style.display = 'block';   
+  gt5.style.marginLeft = '35vh';      
+  gt5.style.transition = '0.5s';    
+  // Others Picture  
+  gt.style.display = 'none'; 
+  gt1.style.display = 'none'; 
+  gt2.style.display = 'none'; 
+  gt3.style.display = 'none'; 
+  gt4.style.display = 'none'; 
+  //closing 
+  btn2.style.display = 'inline-block';  
+}
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;  
+    background: #e4e4e4; 
+}
+.container{
+    width: 1140px;
+    margin: auto; 
+}
+.title{
+    text-align: center;
+    margin: 50px 0;
+}
+.title h1{
+    text-transform: uppercase;
+    font-family: 'Dotum'; 
+}
+.main{
+    padding: 20px; 
+    box-shadow: inset 1px 1px 15px #bdbbbb;
+    border-radius: 10px;
+}
+.row{
+    display: flex;
+}
+.col img{
+    width: 330px;  
+    height: 220px;    
+}
+.row .right{
+    margin-left: 44px;     
+}
+.second{
+    margin-top: 50px;  
+}
+.button{
+    text-align: center;
+}
+#btn2{
+    padding: 10px 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid #000; 
+    margin-top: 20px;
+}
+.button button:focus{
+    outline: none;
+}
